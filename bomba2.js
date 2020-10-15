@@ -1,6 +1,6 @@
-alert("Tienes 3 segundos para desactivar la bomba");
+alert("Tienes 5 segundos para desactivar la bomba");
     
-var timer = setTimeout(bomba, 3000);
+var timer = setTimeout(bomba, 5000);
 
 function bomba (){
     alert("BOOOOOOM");
