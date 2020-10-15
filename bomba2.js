@@ -4,6 +4,7 @@ var timer = setTimeout(bomba, 5000);
 
 function bomba (){
     alert("BOOOOOOM");
+    alert("Todos morimos, no hiciste nada :(")
     postClick();
 }
 
