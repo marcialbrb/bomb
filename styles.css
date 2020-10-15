@@ -6,6 +6,20 @@
     text-align: center;
     border: black solid;
 }
+#cableRojo {
+    background-color: red;
+    color: black;
+}
+
+#cableVerde {
+    background-color: green;
+    color: black;
+}
+
+#cableAmarillo {
+    background-color: yellow;
+    color: black;
+}
 
 body {
 text-align: center;
