@@ -87,6 +87,7 @@ function clickExplota () {
     clearTimeout(timerTemp);
     alert("BOOOOOOOM");
     postClick();
+    alert("Debiste... cortar el... " + cableCorrecto + " *muere* ")
 }
 
 function postClick(){
@@ -101,7 +102,7 @@ function postClick(){
 function clickFin() {
     
     alert("La bomba ha explotado, morimos todos :(")
-    alert("Debiste... cortar el... " + cableCorrecto + " *muere* ")
+    
 }
 
 function postClickCumplido(){
