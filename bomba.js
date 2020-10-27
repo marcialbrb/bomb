@@ -22,8 +22,9 @@ alert("Tienes 5 segundos para desactivar la bomba");        //Alerta que indica 
 let timer = setTimeout(bomba, 5000);                        //Inicia el tiempo para que la bomba explote (Esta sincronizado con el temporizador)
 
 
-
+var cableCorrecto; 
 function numbRandom (numero){
+    
     if(numero==0) {
         desactivar = document.getElementById("cableAmarillo");
         desactivar.addEventListener("click", clickDesactivar);
@@ -33,6 +34,8 @@ function numbRandom (numero){
 
         explota.addEventListener("click", clickExplota);
         explota2.addEventListener("click", clickExplota);
+
+        return(cableCorrecto="cable amarillo")
     }
 
     if(numero==1){
@@ -44,6 +47,8 @@ function numbRandom (numero){
 
         explota.addEventListener("click", clickExplota);
         explota2.addEventListener("click", clickExplota);
+
+        return(cableCorrecto="cable verde")
     }
 
     if(numero==2){
@@ -55,6 +60,8 @@ function numbRandom (numero){
 
         explota.addEventListener("click", clickExplota);
         explota2.addEventListener("click", clickExplota);
+
+        return(cableCorrecto="cable rojo")
     }
 }
 
@@ -79,7 +86,6 @@ function clickExplota () {
     clearTimeout(timer);
     clearTimeout(timerTemp);
     alert("BOOOOOOOM");
-
     postClick();
 }
 
@@ -93,7 +99,9 @@ function postClick(){
 }
 
 function clickFin() {
+    
     alert("La bomba ha explotado, morimos todos :(")
+    alert("Debiste... cortar el... " + cableCorrecto + " *muere* ")
 }
 
 function postClickCumplido(){
